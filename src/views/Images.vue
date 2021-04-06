@@ -1,11 +1,9 @@
 <template>
-  <div class="sidebar__navbar">
-    <Navbar/>
+    <div>
+         <Navbar/>
     <Sidebar/>
-  </div>
-  <div class="content">
-    <h2>Home</h2>
-  </div>
+        <div class="content"><h2>Images</h2></div>
+    </div>
 </template>
 
 <script>
@@ -19,3 +17,7 @@ export default {
   },
 }
 </script>
+
+<style>
+
+</style>
