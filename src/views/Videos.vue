@@ -1,9 +1,10 @@
 <template>
-  <div>
-       <Navbar/>
-    <Sidebar/>
-      <div class="content"><h2>Video</h2></div>
-  </div>
+   <div class="sidebar__navbar">
+      <Navbar/>
+      <Sidebar/>
+    </div>
+    <h2 class="heading">Video</h2>
+    <div class="content"></div>
 </template>
 
 <script>

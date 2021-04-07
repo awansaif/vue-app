@@ -1,7 +1,10 @@
 <template>
-  <div class="about">
-      <navbar/> 
-    <h1>This is an about page</h1>
+    <div class="sidebar__navbar">
+    <Navbar/>
+    <Sidebar/>
+  </div>
+  <div class="content">
+    <h1>Abbout</h1>
   </div>
 </template>
 

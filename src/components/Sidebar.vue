@@ -66,7 +66,7 @@ export default {
     height: 100vh;
     width: 60px;
     color: aliceblue;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     overflow: hidden;
@@ -74,6 +74,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 1;
 }
 .sidebar:hover{
     width: 160px;
@@ -89,7 +90,7 @@ img.logo{
     margin: 30px auto;
 }
 .sidebar nav{
-    height: 60vh;
+    height: 70vh;
 }
 ul{
     height: 100%;
@@ -114,6 +115,13 @@ li a{
 }
 li a:hover{
     background-image: linear-gradient(
+        to right,
+        #2a88e6 7px,
+        rgba(255,255,255,0.1) 7px
+    );
+}
+li a.router-link-exact-active {
+  background-image: linear-gradient(
         to right,
         #2a88e6 7px,
         rgba(255,255,255,0.1) 7px
