@@ -4,10 +4,10 @@
     <hr />
     <form @submit.prevent="login" class="login">
       <label for="email">Username/Email:</label>
-      <input type="text" name="" id="" class="login-form-input" />
+      <input type="text" name="email" v-model="email" class="login-form-input" />
 
       <label for="email">Password:</label>
-      <input type="password" name="" id="" class="login-form-input" />
+      <input type="password" name="password" id="" class="login-form-input" />
       <!-- <router-link class="forget-pass" to="/forget-password">Forget Password?</router-link> -->
       <button>Login</button>
     </form>
@@ -24,11 +24,11 @@ export default {
   },
   methods: {
     login() {
-      axios.get('http://127.0.0.1:8000/api/user').then(response => {
+      axios.get('http://127.0.0.1:8000/api/user-info').then(response => {
           console.log(response);
       });
-      // localStorage.setItem('token','sdknds');
-      // this.$router.push('/home');
+      localStorage.setItem('token','sdknds');
+      this.$router.push('/home');
     }
   }
 };
